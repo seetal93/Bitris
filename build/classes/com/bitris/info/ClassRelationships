@@ -1,0 +1,44 @@
+Main                -> MainController
+                    -> Navigator
+
+GameController      -> Navigator
+                    -> Game
+                    -> Display
+                    -> Level
+                    -> NextBrick
+                    -> Gameplay
+                    -> GameOver
+
+MainController      -/->
+
+MenuController      -> Navigator
+
+Navigator           -> MainController
+
+Board               -> Game
+
+Bricks              -/->
+
+Game                -/->
+
+NextBrick           -> Bricks
+
+Position            -/->
+
+Display             -> Game
+                    -> Board
+                    -> Bricks
+                    -> NextBrick
+
+GameOver            -/->
+
+Gameplay            -> GameOver
+                    -> Level
+
+Level               -> Game
+                    -> Position
+                    -> NextBrick
+                    -> Display
+                    -> Board
+                    -> Bricks
+                    -> Gameplay

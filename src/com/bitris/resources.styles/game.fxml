@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet styleSheet.css?>
+
+<Pane fx:id="vista2" xmlns:fx="http://javafx.com/fxml" fx:controller="com.bitris.controllers.GameController">
+  <children>
+    <BorderPane styleClass="gameBoard" fx:id="gameBoard" layoutX="10" layoutY="10">
+        <center>
+            <GridPane fx:id="gamePanel" hgap="1" vgap="1" />
+        </center>
+    </BorderPane>
+    <Label id="writing" text="Next Brick:" layoutX="1072" layoutY="20"/>
+    <BorderPane styleClass="gameBoard" fx:id="nextBrickBoard" layoutX="1080" layoutY="70">
+        <center>
+            <GridPane fx:id="nextBrickPanel" hgap="1" vgap="1" />
+        </center>
+    </BorderPane>
+    <Label id="writing" text="Score:" layoutX="1110" layoutY="250"/>
+    <BorderPane styleClass="scoreBoard" fx:id="scoreBoard" layoutX="1080" layoutY="300">
+        <padding><Insets top="10" right="65" bottom="10" left="65"/></padding>
+        <center>
+            <GridPane fx:id="scorePanel" hgap="1" vgap="1">
+                <Label id="score" fx:id="scoreText" text="" layoutX="1080" layoutY="300"/>
+            </GridPane>
+        </center>
+    </BorderPane>
+    <BorderPane styleClass="targetBoard" fx:id="targetBoard" layoutX="958" layoutY="19">
+        <padding><Insets top="6" right="6" bottom="6" left="6"/></padding>
+        <center>
+            <GridPane fx:id="targetPanel" hgap="1" vgap="11" />
+        </center>
+    </BorderPane>
+    <Button id="small-btn" mnemonicParsing="false" onAction="#startGame" text="New Game"
+                prefWidth="200" layoutX="1065" layoutY="400" />
+    <Button id="small-btn" fx:id="pauseBtn" mnemonicParsing="false" onAction="#pauseGame" text="Pause"
+                prefWidth="200" layoutX="1065" layoutY="450" />
+    <Button id="small-btn" mnemonicParsing="false" onAction="#previousPane" text="Menu"
+                prefWidth="200" layoutX="1065" layoutY="500" />
+    <Label id="gameOver" fx:id="gameOverText" text="" layoutX="105" layoutY="210"/>
+    <Label id="nextLevel" fx:id="nextLevelText" text="" layoutX="450" layoutY="10"/>
+  </children>
+</Pane>

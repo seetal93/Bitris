@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet styleSheet.css?>
+
+<Pane fx:id="vista1" xmlns:fx="http://javafx.com/fxml" fx:controller="com.bitris.controllers.MenuController">
+  <children>
+    <Label id="titlebg" text="BITRIS"
+                layoutX="285" layoutY="80" />
+    <Label id="title" text="BITRIS"
+                layoutX="285" layoutY="80" />
+    <Button id="big-btn" mnemonicParsing="false" onAction="#nextPane" text="Play"
+                prefWidth="400" layoutX="430" layoutY="520" />
+    <Button id="intro_button" mnemonicParsing="false" onAction="#tutoPane" text="Tutorial"
+                prefWidth="200" layoutX="430" layoutY="620" />
+    <Button id="intro_button" mnemonicParsing="false" onAction="#leaderPane" text="Leaderboard"
+                prefWidth="200" layoutX="630" layoutY="620" />
+  </children>
+</Pane>

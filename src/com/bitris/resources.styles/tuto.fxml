@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<Pane fx:controller ="com.bitris.controllers.MenuController" xmlns:fx = "http://javafx.com/fxml" > 
+    <children>
+        <BorderPane styleClass="gameBoard" fx:id="gameBoard" layoutX="60" layoutY="60" prefWidth="1150" prefHeight="600">
+            <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+                    <children>
+                       <Label id="writing" text="How to play" />
+                       <Label id="writing" text="" />
+                       <Label id="writing2" text="BITRIS is a new type of educational puzzle game that tests your mental binary arithmetic and reflexes simultaneously. Six different shaped binary blocks go across the game field one after the other. The object of the game is to prevent blocks from piling up to the left of the game field by using the binary blocks to add up to the target number situated on the right of the game field. To do this, the binary blocks can be moved up, down and rotated. If you can acquire the target number, the number changes and the blocks disappear, and as a result you accumulate points. If the blocks pile up to the left, then that’s the end of the game. Controls are 'up' and 'down' arrows to move the brick up and down the screen; 'right' arrow to move the brick faster to the right of the screen, and 'space' to rotate the brick." wrapText="true" />
+                       <Label id="writing" text="" />
+                       <Label id="writing" text="What is binary?" />
+                       <Label id="writing" text="" />
+                       <Label id="writing2" text="All computer data is represented using binary, a number system which uses 0's and 1's to represent an infinite number of numbers. As the maximum number of squares that is produced by the game coming from the left of the field is four, a brief introduction into 4-bit binary numbers will be shown by the diagram below." wrapText="true" />
+                       <Label id="writing" text="" />
+                       <Label id="writing" text="" />
+                       <Label id="writing" text="" />
+                       <Label id="writing2" text="An example of how to caluclate, say 3, you do: (0 x 2^3) + (0 x 2^2) + (1 x 2^1) + (1 x 2^0) = 0 + 0 + 2 + 1 = 3, hence the binary for 3 is 0011." wrapText="true" />
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+        <Button id="intro_button" mnemonicParsing="false" onAction="#menuPane" text="Back" translateX="570" translateY="12"/>
+        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="500" translateY="465">
+            <image>
+              <Image url="/com/bitris/resources.images/tuto.gif" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>
+

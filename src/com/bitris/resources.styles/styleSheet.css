@@ -1,0 +1,168 @@
+@font-face {
+    src: url('/com/bitris/resources.styles/Karmatic_Arcade.ttf');
+}
+
+#title {
+    -fx-font-size: 164px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #A88DF2;
+    -fx-effect: dropshadow( gaussian , #7067C7 , 2 , 1.0 , -2 , 2 );
+}
+
+#titlebg {
+    -fx-font-size: 164px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #A88DF2;
+    -fx-effect: dropshadow( gaussian , #ffffff , 2 , 1.0 , -4 , 4 );
+}
+
+#mainBackground {
+    -fx-background-image: url('/com/bitris/resources.images/background.png');
+    -fx-background-size: cover;
+}
+
+#big-btn {
+    -fx-font-size: 48px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #77300d;
+    -fx-padding: 0 100 20 100;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ff9d47, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#big-btn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ffb16d, #c54e2c);
+}
+#big-btn:pressed {
+    -fx-padding: 2 100 18 100;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#small-btn {
+    -fx-font-size: 24px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #77300d;
+    -fx-padding: 0 0 15 0;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ff9d47, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#small-btn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ffb16d, #c54e2c);
+}
+#small-btn:pressed {
+    -fx-padding: 2 0 13 0;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#writing {
+    -fx-font-size: 24px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #81CBE4;
+}
+
+#writing2 {
+    -fx-font-size: 18px;
+    -fx-font-family: Times;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+}
+
+#gameOver {
+    -fx-font-size: 100px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , #7067C7 , 1 , 1.0 , -2 , 2 );
+}
+
+#nextLevel {
+    -fx-font-size: 20px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , #7067C7 , 1 , 1.0 , -2 , 2 );
+}
+
+#score {
+    -fx-font-size: 30px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , #7067C7 , 1 , 1.0 , -2 , 2 );
+}
+
+
+.gameBoard {
+    -fx-border-color: #81CBE4;
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-background-radius: 30px;
+    -fx-border-width: 10px;
+    -fx-border-radius: 14px;
+}
+
+.leaderBoard {
+    -fx-border-color: #81CBE4;
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-background-radius: 30px;
+    -fx-border-width: 10px;
+    -fx-border-radius: 14px;
+}
+
+.targetBoard {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-background-radius: 14px;
+}
+
+#intro_button {
+    -fx-font-size: 15px;
+    -fx-font-family: "Karmatic Arcade";
+    -fx-text-fill: #77300d;
+    -fx-background-insets: 0,0 0 -7 0, 0 0 -5 0, 0 0 -5 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ff9d47, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+#intro_button:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ffb16d, #c54e2c);
+}
+
+#intro_button:pressed {
+    -fx-background-insets: 0,0 0 -7 0, 0 0 -4 0, 0 0 -4 0;
+}
+
+#binary {
+    -fx-background-image: url('/com/bitris/resources.images/binary.gif');  
+}
+
+.scoreBoard {
+    -fx-border-color: #81CBE4;
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-background-radius: 30px;
+    -fx-border-width: 10px;
+    -fx-border-radius: 14px;
+}

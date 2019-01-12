@@ -1,0 +1,21 @@
+Main -+-----------------+----> MainController
+      V                 ʌ
+      +--> Navigator ---+
+
+
+
+GameController -+-------> Navigator
+                V
+                +------------------------+-------------------+-----> Game
+                V                        ʌ                   ʌ
+                +-------> Display -------+----> Board -------+
+                V                        V
+                V                        +----> NextBrick ---+-----> Bricks
+                V                        V                   ʌ
+                V                        +-------------------+
+                V                        V
+                V                        +----> Position
+                V
+                +-------> Level ---------+
+
+NOTE!!! Gameplay and Level have a circular relationship.
